@@ -1,0 +1,139 @@
+.solution {
+    position: relative;
+    padding: 79px 0 61px 0;
+    background: url('../img/bg/solution_bg.webp') center (center / cover) no-repeat;
+    &__title {
+        margin: 0 auto;
+        width: 628px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 36px;
+        text-align: center;
+    }
+    &__frame {
+        position: absolute;
+        display: block;
+        z-index: 10;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 276px;
+    }
+    &__slider {
+        margin: 0 auto;
+        margin-top: 125px;
+        width: 700px;
+    }
+    &__item {
+        margin-top: 35px;
+        height: 464px;
+        z-index: -10;
+    }
+    .slick-prev,.slick-next{
+        border: none;
+        background: none;
+        outline: none;
+        position: absolute;
+        top: 40%;
+        z-index: 5;
+        cursor: pointer;
+    }
+    .slick-prev{
+        left: calc(-30%);
+    }
+    .slick-next{
+        left: calc(130%);
+        transform: rotateY(180deg);
+    }
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -100px;
+        min-width: 800px;
+        height: 65px;
+        padding: 0 30px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        outline: none;
+        display: flex;
+        column-gap: 24px;
+        align-items: center;
+        li {
+            height: 49px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            padding-right: 30px;
+            border-right: 1px solid rgba(#fff, 0.3);
+            cursor: pointer;
+            outline: none;
+            text-shadow: 1px 1px 1px #393939;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: center;
+            list-style-type: none;
+            transition: .5s all;
+            &:hover {
+                color: #00c2f0;
+            }
+            &::before {
+                display: block;
+            }
+            &:nth-child(1) {
+                &:before {
+                    content: 'Prengi Production';
+                }
+            }
+            &:nth-child(2) {
+                &:before {
+                    content: 'Prengi FMC';
+                }
+            }
+            &:nth-child(3) {
+                &:before {
+                    content: 'Prengi Mallz Retail';
+                }
+            }
+            &:nth-child(4) {
+                &:before {
+                    content: 'Prengi Logistic';
+                }
+            }
+            &:nth-child(5) {
+                &:before {
+                    content: 'Prengi IT';
+                }
+            }
+            &:nth-child(6) {
+                border-right: none;
+                padding-right: 0;
+                &:before {
+                    content: 'Prengi HR';
+                }
+            }
+            button {
+                display: none;
+            }
+        }
+    }
+    ul {
+        .slick-active {
+            color: #00c2f0;
+        }
+    }
+    .slick-slide {
+        outline: none;
+    }
+    .slick-initialized .slick-slide {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
+
+
+

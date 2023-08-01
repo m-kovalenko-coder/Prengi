@@ -1,0 +1,69 @@
+.option {
+    padding: 82px 0 181px 0;
+    background: url('../img/bg/option_bg.webp') center (center / cover ) no-repeat;
+    &__title {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 36px;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 124px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        column-gap: 91px;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 38px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 36px;
+        text-align: center;
+        &_right {
+            padding-right: 0;
+            padding-left: 38px;
+        }
+    }
+    &__transparent {
+        position: absolute;
+        right: 0;
+        width: 167px;
+        height: 167px;
+        background-color: rgba(0, 192, 240, 0.3);
+        &_right {
+            right: none;
+            left: 0;
+        }
+    }
+    &__caption {
+        z-index: 1;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 22px;
+        text-align: right;
+        text-transform: uppercase;
+        &_right {
+            text-align: left;
+        }
+    }
+    &__descr {
+        z-index: 1;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: right;
+        &_right {
+            text-align: left;
+        }
+    }
+}

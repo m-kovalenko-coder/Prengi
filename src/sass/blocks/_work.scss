@@ -1,0 +1,42 @@
+.work {
+    padding: 60px 0 80px 0;
+    position: relative;
+    &__block {
+        height: 350px;
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__corners {
+        position: absolute;
+        width: 302px;
+        height: 302px;
+        border: 1px solid hsl(192, 100%, 47%);
+        border-radius: 5px;
+    }
+    &__circle {
+        position: absolute;
+        width: 375px;
+        height: 375px;
+        background-color: #fff;
+        border-radius: 100%;
+    }
+    &__icon {
+        position: absolute;
+    }
+    &__title {
+        margin-top: 42px;
+        color: #393939;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 36px;
+        text-align: center;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
